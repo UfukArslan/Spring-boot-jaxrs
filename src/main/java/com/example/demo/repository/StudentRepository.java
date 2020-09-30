@@ -38,7 +38,7 @@ public class StudentRepository {
 		Student student = null;
 		if (students.containsKey(id)) student = students.get(id);
 		                         
-		return Optional.ofNullable(student);
+		return Optional.ofNullable(student); // lève un exception
 	}
 	
 	

@@ -14,8 +14,8 @@ import javax.ws.rs.core.Response;
 
 import com.example.demo.model.Student;
 
-@Path("students")
-@Produces(MediaType.APPLICATION_JSON)
+@Path("students")// se sont les routes 
+@Produces(MediaType.APPLICATION_JSON) //les méhtodes de cette class sont des méthodes qui vont être des services dans serveur
 public interface StudentService {
 	
 	@GET
@@ -24,7 +24,7 @@ public interface StudentService {
 	
 	@Path("{id}")
 	@GET
-	public Response getById(@PathParam("id") Long id);
+	public Response getById(@PathParam("id") Long id); // PathParam: on passe l'id dans l'url
 	
 	
     
